@@ -1,0 +1,60 @@
+extends ./base.jade
+block content
+	section.banner
+		.container-slider
+			.slider(style="background-image:url('../../static/img/banner.png')")
+				.content
+					.container-text
+						h3.title.
+							CONFIANZA Y EXPERIENCIA
+						h4.sub-title.
+							en tu empresa
+						.text.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate neque libero porro nulla, sint fugit quas expedita molestias assumenda, sed ullam fugiat suscipit mollitia nostrum dolores, officiis odit ut rerum.
+			.slider(style="background-image:url('../../static/img/banner.png')")
+				.content
+					.container-text
+						h3.title.
+							CONFIANZA Y EXPERIENCIA
+						h4.sub-title.
+							en tu empresa
+						.text.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate neque libero porro nulla, sint fugit quas expedita molestias assumenda, sed ullam fugiat suscipit mollitia nostrum dolores, officiis odit ut rerum.
+			.slider(style="background-image:url('../../static/img/banner.png')")
+				.content
+					.container-text
+						h3.title.
+							CONFIANZA Y EXPERIENCIA
+						h4.sub-title.
+							en tu empresa
+						.text.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate neque libero porro nulla, sint fugit quas expedita molestias assumenda, sed ullam fugiat suscipit mollitia nostrum dolores, officiis odit ut rerum.
+
+
+block js
+	script(src="../../static/js/jquery.bxslider.min.js")
+	script().
+		$(document).ready(function(){
+
+		  $('.container-slider').bxSlider({
+			mode:"fade",
+			auto: true,
+			pause: '525000',
+			pager: true,
+			controls: false,
+			adaptiveHeight: true,
+			onSliderLoad: function(currentIndex) {
+					$('.js-b1slider').children().eq(currentIndex).addClass('active');
+
+				},
+				onSlideBefore: function($slideElement){
+				  setTimeout( function(){
+
+					  $slideElement.addClass('active');
+
+				  },500);
+				  $('.js-b1slider').children().removeClass('active');
+
+				}
+		});
+		});

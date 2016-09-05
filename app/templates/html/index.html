@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="../../static/css/styles.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <div class="container-log">
+          <figure><img src="../../static/img/logo.png" width="117" height="117" alt=""/></figure>
+          <h3 class="title-logo">
+            LA CUZQUEÑA  S.A.
+            
+          </h3>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">
+                Servicios
+                </a></li>
+            <li><a href="">Vehículos</a></li>
+            <li><a href="">
+                Contacto
+                </a></li>
+          </ul>
+        </nav>
+        <div class="container-telephone">
+          <figure><img src="../../static/img/telefono.png" alt=""/></figure><a href="">(511) 456 - 3456</a>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="container-slider">
+        <div style="background-image:url('../../static/img/banner.png')" class="slider">
+          <div class="content">
+            <div class="container-text">
+              <h3 class="title">CONFIANZA Y EXPERIENCIA</h3>
+              <h4 class="sub-title">en tu empresa</h4>
+              <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate neque libero porro nulla, sint fugit quas expedita molestias assumenda, sed ullam fugiat suscipit mollitia nostrum dolores, officiis odit ut rerum.</div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image:url('../../static/img/banner.png')" class="slider">
+          <div class="content">
+            <div class="container-text">
+              <h3 class="title">CONFIANZA Y EXPERIENCIA</h3>
+              <h4 class="sub-title">en tu empresa</h4>
+              <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate neque libero porro nulla, sint fugit quas expedita molestias assumenda, sed ullam fugiat suscipit mollitia nostrum dolores, officiis odit ut rerum.</div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image:url('../../static/img/banner.png')" class="slider">
+          <div class="content">
+            <div class="container-text">
+              <h3 class="title">CONFIANZA Y EXPERIENCIA</h3>
+              <h4 class="sub-title">en tu empresa</h4>
+              <div class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate neque libero porro nulla, sint fugit quas expedita molestias assumenda, sed ullam fugiat suscipit mollitia nostrum dolores, officiis odit ut rerum.
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="../../static/js/jquery.js"></script>
+  <script src="../../static/js/jquery.bxslider.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    
+      $('.container-slider').bxSlider({
+    	mode:"fade",
+    	auto: true,
+    	pause: '525000',
+    	pager: true,
+    	controls: false,
+    	adaptiveHeight: true,
+    	onSliderLoad: function(currentIndex) {
+    			$('.js-b1slider').children().eq(currentIndex).addClass('active');
+    
+    		},
+    		onSlideBefore: function($slideElement){
+    		  setTimeout( function(){
+    
+    			  $slideElement.addClass('active');
+    
+    		  },500);
+    		  $('.js-b1slider').children().removeClass('active');
+    
+    		}
+    });
+    });
+  </script>
+</body>

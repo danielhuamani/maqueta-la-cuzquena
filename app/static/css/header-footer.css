@@ -1,0 +1,69 @@
+header {
+  height: 75px;
+}
+header .container {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header .container .container-log figure {
+  position: absolute;
+  left: 0px;
+  top: 5px;
+  display: inline-block;
+  z-index: 100;
+}
+header .container .container-log figure img {
+  display: block;
+  width: 117px;
+  height: 117px;
+}
+header .container .container-log .title-logo {
+  color: #1f2f79;
+  margin: 0;
+  margin-left: 120px;
+  font-size: 22px;
+  font-family: 'proxima_nova_rgbold';
+  display: inline-block;
+  vertical-align: top;
+}
+header .container nav {
+  height: 100%;
+  margin-left: 40px;
+}
+header .container nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .container nav ul li {
+  display: inline-block;
+}
+header .container nav ul li a {
+  padding: 27px 12px;
+  font-size: 18px;
+  color: #1f2f79;
+  transition: 0.2s ease all;
+  font-family: 'proxima_nova_rgregular';
+}
+header .container nav ul li:hover a {
+  color: #fff;
+  background: #fcb61f;
+}
+header .container .container-telephone {
+  margin-left: 40px;
+}
+header .container .container-telephone figure {
+  display: inline-block;
+  vertical-align: top;
+}
+header .container .container-telephone a {
+  margin-left: 5px;
+  color: #1f2f79;
+  font-family: 'proxima_nova_rgbold';
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+}

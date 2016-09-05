@@ -1,0 +1,70 @@
+c-azul = #1f2f79
+c-amarillo = #fcb61f
+c-blanco = #fff
+semibold = 'proxima_novasemibold';
+regular = 'proxima_nova_rgregular';
+italic = 'proxima_novalight_italic';
+extbold = 'proxima_novaextrabold';
+bold = 'proxima_nova_rgbold';
+
+header
+
+	height 75px
+	.container
+		height 100%
+		position relative
+		display flex
+		flex-direction row
+		align-items center
+		.container-log
+			figure
+				position absolute
+				left 0px
+				top 5px
+				display inline-block
+				z-index 100
+				img
+					display block
+					width 117px
+					height 117px
+			.title-logo
+				color c-azul
+				margin 0
+				margin-left 120px
+				font-size 22px
+				font-family bold
+				display inline-block
+				vertical-align top
+		nav
+			height 100%
+			margin-left 40px
+			ul
+				height 100%
+				display flex
+				align-items center
+				li
+
+					display inline-block
+					a
+
+						padding 27px 12px
+						font-size 18px
+						color c-azul
+						transition 0.2s ease all
+						font-family regular
+				li:hover
+					a
+						color c-blanco
+						background c-amarillo
+		.container-telephone
+			margin-left 40px
+			figure
+				display inline-block
+				vertical-align top
+			a
+				margin-left 5px
+				color c-azul
+				font-family bold
+				font-size 16px
+				display inline-block
+				vertical-align top
