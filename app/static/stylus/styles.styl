@@ -7,6 +7,7 @@
 c-azul = #1f2f79
 c-amarillo = #fcb61f
 c-black = #000
+c-plomo = #828281
 //fuente
 
 semibold = 'proxima_novasemibold';
@@ -110,3 +111,76 @@ section.banner
                         font-family regular
                         color c-black
 
+section.info-pages
+    margin-top 45px
+    margin-bottom 75px
+    .container
+        display flex
+        justify-content space-between
+        .page:first-child
+            margin-left 0px !important
+        .page:last-child
+            margin-right 0px !important
+        .page
+            margin 0px 5px
+            text-align center
+            h3
+                font-family bold
+                font-size 20px
+                color c-azul
+            .text
+                font-family regular
+                font-size 14px
+                color c-plomo
+                margin-top 15px
+                margin-bottom 15px
+            a
+                font-size 15px
+                font-family bold
+                color white
+                background c-azul
+                padding 5px 12px
+                border-radius 12px
+                transition 0.2s ease all
+                &:hover
+                    background c-amarillo
+
+section.servicio-ventas
+    margin-bottom 50px
+    .container
+        display flex
+        justify-content space-between
+        .servicio
+            background-image url("../img/fondo-servicio.png")
+        .ventas
+            background-image url("../img/fondo-ventas.png")
+        .item
+            width 49%
+            background-size cover
+            padding 22px 10px 22px 15px
+            box-sizing border-box
+            position relative
+            figure
+                position absolute
+                bottom -22px
+                right 15px
+                display inline-block
+                vertical-align top
+                img
+                    display block
+                    max-width 100%
+                    height auto
+            .text
+                width 300px
+                display inline-block
+                vertical-align top
+                h3
+                    font-size 32px
+                    font-family regular
+                    color white
+                    margin-bottom 0px
+                h4
+                    font-size 32px
+                    font-family bold
+                    color white
+                    margin-bottom 0px
