@@ -1,3 +1,52 @@
+section.servicio-ventas {
+  margin-bottom: 50px;
+}
+section.servicio-ventas .container {
+  display: flex;
+  justify-content: space-between;
+}
+section.servicio-ventas .container .servicio {
+  background-image: url("../img/fondo-servicio.png");
+}
+section.servicio-ventas .container .ventas {
+  background-image: url("../img/fondo-ventas.png");
+}
+section.servicio-ventas .container .item {
+  width: 49%;
+  background-size: cover;
+  padding: 22px 10px 22px 15px;
+  box-sizing: border-box;
+  position: relative;
+}
+section.servicio-ventas .container .item figure {
+  position: absolute;
+  bottom: -22px;
+  right: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+section.servicio-ventas .container .item figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+section.servicio-ventas .container .item .text {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+section.servicio-ventas .container .item .text h3 {
+  font-size: 32px;
+  font-family: regular;
+  color: #fff;
+  margin-bottom: 0px;
+}
+section.servicio-ventas .container .item .text h4 {
+  font-size: 32px;
+  font-family: bold;
+  color: #fff;
+  margin-bottom: 0px;
+}
 section.banner-page {
   background: c-amarillo;
   position: relative;

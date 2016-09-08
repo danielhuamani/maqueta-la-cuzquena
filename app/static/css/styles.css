@@ -829,6 +829,69 @@ header .container .container-telephone a {
   display: inline-block;
   vertical-align: top;
 }
+section.servicio-ventas {
+  margin-bottom: 50px;
+}
+section.servicio-ventas .container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+section.servicio-ventas .container .servicio {
+  background-image: url("../img/fondo-servicio.png");
+}
+section.servicio-ventas .container .ventas {
+  background-image: url("../img/fondo-ventas.png");
+}
+section.servicio-ventas .container .item {
+  width: 49%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  padding: 22px 10px 22px 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+section.servicio-ventas .container .item figure {
+  position: absolute;
+  bottom: -22px;
+  right: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+section.servicio-ventas .container .item figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+section.servicio-ventas .container .item .text {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+section.servicio-ventas .container .item .text h3 {
+  font-size: 32px;
+  font-family: 'proxima_nova_rgregular';
+  color: #fff;
+  margin-bottom: 0px;
+}
+section.servicio-ventas .container .item .text h4 {
+  font-size: 32px;
+  font-family: 'proxima_nova_rgbold';
+  color: #fff;
+  margin-bottom: 0px;
+}
 section.banner-page {
   background: #fcb61f;
   position: relative;
@@ -911,7 +974,7 @@ section.info-pages .about-us .text-section .text-yellow {
 section.info-pages .about-us .text-section .text {
   font-family: 'proxima_nova_rgregular';
   font-size: 14px;
-  color: #6f6f6e;
+  color: c-gris;
 }
 section.info-pages .about-us .image-section {
   padding: 0 0 0 30px;
@@ -936,7 +999,7 @@ section.info-pages .content-our-values .value .title-value {
 }
 section.info-pages .content-our-values .value p {
   font-size: 14px;
-  color: #6f6f6e;
+  color: c-gris;
   font-family: 'proxima_nova_rgregular';
 }
 section.info-pages .content-other-info {
