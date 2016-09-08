@@ -51,10 +51,10 @@ abbr[title] {
 }
 b,
 strong {
-  font-weight: bold;
+  font-weight: 'proxima_nova_rgbold';
 }
 dfn {
-  font-style: italic;
+  font-style: 'proxima_novalight_italic';
 }
 hr {
   -moz-box-sizing: content-box;
@@ -274,7 +274,7 @@ h2 {
   margin: 0 0 10px;
   font-size: 38px;
   line-height: 1;
-  font-weight: bold;
+  font-weight: 'proxima_nova_rgbold';
 }
 h3 {
   margin: 0 0 10px;
@@ -291,7 +291,7 @@ h5 {
   margin: 0 0 10px;
   font-size: 18px;
   line-height: 1;
-  font-weight: bold;
+  font-weight: 'proxima_nova_rgbold';
 }
 h6 {
   font-size: 16px;
@@ -312,7 +312,7 @@ cite {
   font-style: normal;
 }
 strong {
-  font-weight: bold;
+  font-weight: 'proxima_nova_rgbold';
 }
 label {
   cursor: pointer;
@@ -374,6 +374,54 @@ br {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'icomoon';
+  src: url("../icomoon/icomoon.eot?et1szz");
+  src: url("../icomoon/icomoon.eot?et1szz#iefix") format('embedded-opentype'), url("../icomoon/icomoon.ttf?et1szz") format('truetype'), url("../icomoon/icomoon.woff?et1szz") format('woff'), url("../icomoon/icomoon.svg?et1szz#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+/* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+/* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-envelope:before {
+  content: "\e900";
+}
+.icon-mail:before {
+  content: "\e900";
+}
+.icon-email:before {
+  content: "\e900";
+}
+.icon-contact:before {
+  content: "\e900";
+}
+.icon-location:before {
+  content: "\e901";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-arrow-right:before {
+  content: "\e902";
+}
 article,
 aside,
 details,
@@ -427,10 +475,10 @@ abbr[title] {
 }
 b,
 strong {
-  font-weight: bold;
+  font-weight: 'proxima_nova_rgbold';
 }
 dfn {
-  font-style: italic;
+  font-style: 'proxima_novalight_italic';
 }
 hr {
   -moz-box-sizing: content-box;
@@ -656,7 +704,7 @@ h2 {
   margin: 0 0 10px;
   font-size: 38px;
   line-height: 1;
-  font-weight: bold;
+  font-weight: 'proxima_nova_rgbold';
 }
 h3 {
   margin: 0 0 10px;
@@ -673,7 +721,7 @@ h5 {
   margin: 0 0 10px;
   font-size: 18px;
   line-height: 1;
-  font-weight: bold;
+  font-weight: 'proxima_nova_rgbold';
 }
 h6 {
   font-size: 16px;
@@ -694,7 +742,7 @@ cite {
   font-style: normal;
 }
 strong {
-  font-weight: bold;
+  font-weight: 'proxima_nova_rgbold';
 }
 label {
   cursor: pointer;
@@ -828,6 +876,14 @@ header .container .container-telephone a {
   font-size: 16px;
   display: inline-block;
   vertical-align: top;
+}
+footer .footer-top {
+  background: #1f2f79;
+}
+footer .footer-top .pages h2 {
+  color: #fff;
+  font-size: 24px;
+  font-family: 'proxima_nova_rgbold';
 }
 section.servicio-ventas {
   margin-bottom: 50px;
@@ -1557,4 +1613,10 @@ section.contacto-empresa .container .formulario form .button button {
 section.contacto-empresa .container .formulario form .button button:hover {
   color: #fff;
   background: #1f2f79;
+}
+section.contacto-empresa .container .formulario form .button button i {
+  margin-top: -1px;
+  margin-left: 4px;
+  display: inline-block;
+  vertical-align: middle;
 }

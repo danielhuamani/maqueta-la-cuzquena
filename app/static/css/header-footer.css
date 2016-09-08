@@ -21,11 +21,11 @@ header .container .container-log figure img {
   height: 117px;
 }
 header .container .container-log .title-logo {
-  color: #1f2f79;
+  color: c-azul;
   margin: 0;
   margin-left: 120px;
   font-size: 22px;
-  font-family: 'proxima_nova_rgbold';
+  font-family: bold;
   display: inline-block;
   vertical-align: top;
 }
@@ -44,13 +44,13 @@ header .container nav ul li {
 header .container nav ul li a {
   padding: 27px 12px;
   font-size: 18px;
-  color: #1f2f79;
+  color: c-azul;
   transition: 0.2s ease all;
-  font-family: 'proxima_nova_rgregular';
+  font-family: regular;
 }
 header .container nav ul li:hover a {
-  color: #fff;
-  background: #fcb61f;
+  color: c-blanco;
+  background: c-amarillo;
 }
 header .container .container-telephone {
   margin-left: 40px;
@@ -61,9 +61,17 @@ header .container .container-telephone figure {
 }
 header .container .container-telephone a {
   margin-left: 5px;
-  color: #1f2f79;
-  font-family: 'proxima_nova_rgbold';
+  color: c-azul;
+  font-family: bold;
   font-size: 16px;
   display: inline-block;
   vertical-align: top;
+}
+footer .footer-top {
+  background: c-azul;
+}
+footer .footer-top .pages h2 {
+  color: c-blanco;
+  font-size: 24px;
+  font-family: bold;
 }
