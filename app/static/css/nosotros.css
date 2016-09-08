@@ -72,7 +72,7 @@ section.banner-page .banner-image:after {
   border-top: 212px solid #fcb61f;
   border-left: 50px solid transparent;
   position: absolute;
-  right: 0;
+  right: -1px;
   top: 0;
 }
 section.banner-page .banner-image:before {
@@ -82,7 +82,7 @@ section.banner-page .banner-image:before {
   border-bottom: 212px solid #fcb61f;
   border-right: 50px solid transparent;
   position: absolute;
-  left: 0;
+  left: -1px;
   top: 0;
 }
 section.banner-page .about-us .container {

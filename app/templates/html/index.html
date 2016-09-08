@@ -107,27 +107,27 @@
   <script>
     $(document).ready(function(){
     
-      $('.container-slider').bxSlider({
-    	mode:"fade",
-    	auto: true,
-    	pause: '525000',
-    	pager: true,
-    	controls: false,
-    	adaptiveHeight: true,
-    	onSliderLoad: function(currentIndex) {
-    			$('.js-b1slider').children().eq(currentIndex).addClass('active');
+    	$('.container-slider').bxSlider({
+    		mode:"fade",
+    		auto: true,
+    		pause: '525000',
+    		pager: true,
+    		controls: false,
+    		adaptiveHeight: true,
+    		onSliderLoad: function(currentIndex) {
+    				$('.js-b1slider').children().eq(currentIndex).addClass('active');
     
-    		},
-    		onSlideBefore: function($slideElement){
-    		  setTimeout( function(){
+    			},
+    			onSlideBefore: function($slideElement){
+    			  setTimeout( function(){
     
-    			  $slideElement.addClass('active');
+    				  $slideElement.addClass('active');
     
-    		  },1000);
-    		  $('.js-b1slider').children().removeClass('active');
+    			  },1000);
+    			  $('.js-b1slider').children().removeClass('active');
     
-    		}
-    });
+    			}
+    	});
     });
   </script>
 </body>

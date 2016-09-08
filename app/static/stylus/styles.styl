@@ -7,7 +7,10 @@
 c-azul = #1f2f79
 c-amarillo = #fcb61f
 c-black = #000
+c-white = #ffffff
 c-plomo = #828281
+c-gris = #6f6f6e
+c-light = #ebebeb
 //fuente
 
 semibold = 'proxima_novasemibold';
@@ -17,6 +20,7 @@ extbold = 'proxima_novaextrabold';
 bold = 'proxima_nova_rgbold';
 
 @import 'nosotros.styl'
+@import 'contacto.styl'
 
 
 section.banner
@@ -185,3 +189,18 @@ section.servicio-ventas
                     font-family bold
                     color white
                     margin-bottom 0px
+
+
+//Map styles
+.map
+    height: 400px
+    overflow: hidden
+    margin: auto
+    #gmap_canvas 
+        height: 400px
+        width: 100%
+        visibility visible!important
+        img
+            max-width none!important
+            background none!important
+        

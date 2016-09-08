@@ -927,7 +927,7 @@ section.banner-page .banner-image:after {
   border-top: 212px solid #fcb61f;
   border-left: 50px solid transparent;
   position: absolute;
-  right: 0;
+  right: -1px;
   top: 0;
 }
 section.banner-page .banner-image:before {
@@ -937,7 +937,7 @@ section.banner-page .banner-image:before {
   border-bottom: 212px solid #fcb61f;
   border-right: 50px solid transparent;
   position: absolute;
-  left: 0;
+  left: -1px;
   top: 0;
 }
 section.banner-page .about-us .container {
@@ -974,7 +974,7 @@ section.info-pages .about-us .text-section .text-yellow {
 section.info-pages .about-us .text-section .text {
   font-family: 'proxima_nova_rgregular';
   font-size: 14px;
-  color: c-gris;
+  color: #6f6f6e;
 }
 section.info-pages .about-us .image-section {
   padding: 0 0 0 30px;
@@ -999,7 +999,7 @@ section.info-pages .content-our-values .value .title-value {
 }
 section.info-pages .content-our-values .value p {
   font-size: 14px;
-  color: c-gris;
+  color: #6f6f6e;
   font-family: 'proxima_nova_rgregular';
 }
 section.info-pages .content-other-info {
@@ -1073,6 +1073,145 @@ section.info-pages .content-other-info p {
   color: #fff;
   font-size: 14px;
   font-family: 'proxima_nova_rgregular';
+}
+section.info-pages {
+  text-align: left;
+}
+section.info-pages.contact {
+  margin-bottom: 45px;
+}
+section.info-pages .contact-us {
+  text-align: left;
+}
+section.info-pages .contact-us .contact-main {
+  text-align: left;
+  width: 100%;
+}
+section.info-pages .contact-us .contact-main .main-title {
+  color: #1f2f79;
+  font-size: 35px;
+  font-family: 'proxima_novasemibold';
+}
+section.info-pages .contact-us .contact-main .container-section {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+section.info-pages .contact-us .contact-main .container-section .text-section {
+  padding: 20px 0 0 0;
+}
+section.info-pages .contact-us .contact-main .container-section .text-section .block-contact {
+  padding: 5px 0 20px 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+section.info-pages .contact-us .contact-main .container-section .text-section .block-contact .icon-contact {
+  text-align: center;
+  min-width: 60px;
+}
+section.info-pages .contact-us .contact-main .container-section .text-section .block-contact .info-contact {
+  text-align: left;
+}
+section.info-pages .contact-us .contact-main .container-section .text-section .block-contact .info-contact h4 {
+  text-align: left;
+  font-family: 'proxima_nova_rgbold';
+  color: #1f2f79;
+  font-size: 17px;
+  margin: 0 0 7px 0;
+}
+section.info-pages .contact-us .contact-main .container-section .text-section .block-contact .info-contact p.text-detail {
+  text-align: left;
+  font-size: 14px;
+  font-family: 'proxima_nova_rgregular';
+  color: #6f6f6e;
+  line-height: 1.3em;
+}
+section.info-pages .contact-us .contact-main .form-section {
+  padding: 30px 0 0 0;
+  width: 50%;
+}
+section.info-pages .contact-us .contact-main .form-section .formgroup {
+  padding: 0 15px;
+}
+section.info-pages .contact-us .contact-main .form-section .formgroup input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  margin: 0 0 15px -15px;
+  background-color: #ebebeb;
+  font-family: 'proxima_nova_rgregular';
+  font-size: 14px;
+  color: #6f6f6e;
+}
+section.info-pages .contact-us .contact-main .form-section .formgroup textarea {
+  border-radius: 15px;
+  width: 100%;
+  max-width: 100%;
+  padding: 15px;
+  border: 1px solid transparent;
+  background-color: #ebebeb;
+  font-family: 'proxima_nova_rgregular';
+  font-size: 14px;
+  min-height: 120px;
+  color: #6f6f6e;
+  margin: 0 0 15px -15px;
+}
+section.info-pages .contact-us .contact-main .form-section .formgroup p {
+  font-size: 11px;
+  color: #6f6f6e;
+  margin: 10px;
+  display: inline-block;
+  margin: 0 0 15px -15px;
+}
+section.info-pages .contact-us .contact-main .form-section button {
+  font-size: 14px;
+  background-color: #fcb61f;
+  color: #1f2f79;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  font-family: 'proxima_nova_rgbold';
+  padding: 5px 10px 5px 20px;
+  margin: 0 -15px 0 0;
+  float: right;
+}
+section.info-pages .contact-us .contact-main .form-section button .only-hover {
+  display: none;
+}
+section.info-pages .contact-us .contact-main .form-section button .only-normal {
+  display: inline-block;
+}
+section.info-pages .contact-us .contact-main .form-section button:hover {
+  background-color: #1f2f79;
+  color: #fff;
+}
+section.info-pages .contact-us .contact-main .form-section button:hover .only-hover {
+  display: inline-block;
+}
+section.info-pages .contact-us .contact-main .form-section button:hover .only-normal {
+  display: none;
+}
+section.info-pages .contact-us .contact-main h3.main-title {
+  text-align: left;
 }
 section.banner .bx-viewport {
   height: 360px !important;
@@ -1301,4 +1440,18 @@ section.servicio-ventas .container .item .text h4 {
   font-family: 'proxima_nova_rgbold';
   color: #fff;
   margin-bottom: 0px;
+}
+.map {
+  height: 400px;
+  overflow: hidden;
+  margin: auto;
+}
+.map #gmap_canvas {
+  height: 400px;
+  width: 100%;
+  visibility: visible !important;
+}
+.map #gmap_canvas img {
+  max-width: none !important;
+  background: none !important;
 }
