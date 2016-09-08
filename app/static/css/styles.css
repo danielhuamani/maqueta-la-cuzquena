@@ -1239,3 +1239,99 @@ section.servicio-ventas .container .item .text h4 {
   color: #fff;
   margin-bottom: 0px;
 }
+section.contacto-empresa {
+  padding-top: 30px;
+  background-color: #ebebeb;
+}
+section.contacto-empresa .container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+section.contacto-empresa .container figure {
+  margin-bottom: 0px;
+  margin-top: -10px;
+}
+section.contacto-empresa .container figure img {
+  display: block;
+}
+section.contacto-empresa .container .formulario .text {
+  color: #828281;
+  font-size: 14px;
+  font-family: 'proxima_nova_rgregular';
+  margin-bottom: 15px;
+}
+section.contacto-empresa .container .formulario h2 {
+  font-family: 'proxima_nova_rgbold';
+  font-size: 25px;
+  color: #fcb61f;
+}
+section.contacto-empresa .container .formulario h2 span {
+  font-family: 'proxima_nova_rgbold';
+  font-size: 22px;
+  color: #1f2f79;
+}
+section.contacto-empresa .container .formulario form .cnt-input {
+  display: inline-block;
+}
+section.contacto-empresa .container .formulario form .cnt-input .input:first-child {
+  margin-top: 0px;
+}
+section.contacto-empresa .container .formulario form .cnt-input .input {
+  margin-top: 8px;
+}
+section.contacto-empresa .container .formulario form .cnt-input .input input {
+  height: 35px;
+  -webkit-box-shadow: 3px 4px 0px #c5c5c4;
+  box-shadow: 3px 4px 0px #c5c5c4;
+  font-size: 14px;
+  font-family: 'proxima_nova_rgregular';
+  border: none;
+  width: 320px;
+  border-radius: 15px;
+  -webkit-box-sizing: box-sizing;
+  -moz-box-sizing: box-sizing;
+  box-sizing: box-sizing;
+  padding-left: 8px;
+}
+section.contacto-empresa .container .formulario form .cnt-input .input textarea {
+  -webkit-box-shadow: 3px 4px 0px #c5c5c4;
+  box-shadow: 3px 4px 0px #c5c5c4;
+  font-size: 14px;
+  font-family: 'proxima_nova_rgregular';
+  border: none;
+  width: 320px;
+  border-radius: 15px;
+  -webkit-box-sizing: box-sizing;
+  -moz-box-sizing: box-sizing;
+  box-sizing: box-sizing;
+  padding-left: 8px;
+  padding-top: 8px;
+  height: 100px;
+}
+section.contacto-empresa .container .formulario form .button {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 10px;
+}
+section.contacto-empresa .container .formulario form .button button {
+  border: none;
+  background: #fcb61f;
+  color: #1f2f79;
+  font-size: 15px;
+  padding: 5px 15px;
+  border-radius: 12px;
+  font-family: 'proxima_nova_rgbold';
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+section.contacto-empresa .container .formulario form .button button:hover {
+  color: #fff;
+  background: #1f2f79;
+}

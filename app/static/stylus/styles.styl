@@ -10,6 +10,8 @@ c-black = #000
 c-plomo = #828281
 c-gris = #6f6f6e
 c-blanco = #ffffff
+c-plomo-claro = #ebebeb
+c-plomo-sombra = #c5c5c4
 //fuente
 
 semibold = 'proxima_novasemibold';
@@ -187,3 +189,76 @@ section.servicio-ventas
                     font-family bold
                     color white
                     margin-bottom 0px
+section.contacto-empresa
+    padding-top 30px
+    background-color c-plomo-claro
+    .container
+        display flex
+        figure
+            margin-bottom 0px
+            margin-top -10px
+
+            img
+                display block
+        .formulario
+            .text
+                color c-plomo
+                font-size 14px
+                font-family regular
+                margin-bottom 15px
+            h2
+                font-family bold
+                font-size 25px
+                color c-amarillo
+                span
+                    font-family bold
+                    font-size 22px
+                    color c-azul
+            form
+
+                .cnt-input
+                    display inline-block
+                    .input:first-child
+                        margin-top 0px
+                    .input
+                        margin-top 8px
+                        input
+                            height 35px
+                            box-shadow 3px 4px 0px c-plomo-sombra
+                            font-size 14px
+                            font-family regular
+                            border none
+                            width 320px
+                            border-radius 15px
+                            box-sizing box-sizing
+                            padding-left 8px
+                        textarea
+                            box-shadow 3px 4px 0px c-plomo-sombra
+                            font-size 14px
+                            font-family regular
+                            border none
+                            width 320px
+                            border-radius 15px
+                            box-sizing box-sizing
+                            padding-left 8px
+                            padding-top 8px
+                            height 100px
+                .button
+                    display inline-block
+                    vertical-align bottom
+                    margin-left 10px
+                    button
+                        border none
+
+                        background c-amarillo
+                        color c-azul
+                        font-size 15px
+                        padding 5px 15px
+                        border-radius 12px
+                        font-family bold
+                        transition 0.2s ease all
+                        &:hover
+                            color c-blanco
+                            background c-azul
+
+
