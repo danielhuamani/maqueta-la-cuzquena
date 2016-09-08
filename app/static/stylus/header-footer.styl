@@ -10,7 +10,7 @@ header
 		flex-direction row
 		align-items center
 		.container-log
-			figure
+			figure.logo
 				position absolute
 				left 0px
 				top 5px
@@ -20,10 +20,10 @@ header
 					display block
 					width 117px
 					height 117px
-			.title-logo
+			figure.logo-text
 				color c-azul
 				margin 0
-				margin-left 120px
+				margin-left 125px
 				font-size 22px
 				font-family bold
 				display inline-block
@@ -65,9 +65,151 @@ header
 
 footer
 	.footer-top
+		padding 15px 0px
 		background c-azul
-		.pages
-			h2
-				color c-blanco
-				font-size 24px
+		.container
+			display flex
+			justify-content space-between
+			h3
+				font-size 16px
 				font-family bold
+				color c-blanco
+				margin-bottom 8px
+			.redes
+				text-align center
+				padding-left 35px
+				padding-top 5px
+				ul
+					padding-top 8px
+					display flex
+					justify-content center
+					li
+						margin 0px 5px
+						a
+
+							font-size 18px
+							padding 8px
+							border-radius 50%
+							color c-azul
+							background c-blanco
+							transition 0.2s ease all
+							&:hover
+								color c-blanco
+								background c-amarillo
+			.cnt-phone
+				text-align center
+				padding-top 5px
+				padding-left 35px
+				padding-right 35px
+				border-right 1px solid c-plomo
+				.text
+					a
+						font-family bold
+						font-size 18px
+						color c-blanco
+			.cnt-address
+				padding-top 5px
+				text-align center
+				width 202px
+				padding-left 35px
+				padding-right 35px
+				border-right 1px solid c-plomo
+				.address
+					display flex
+					align-items center
+					.icon-location
+						font-size 22px
+						color c-amarillo
+					.text
+						margin-left 10px
+						color c-blanco
+						font-family regular
+						font-size 14px
+						p
+							margin 0px
+						.location
+							font-family bold
+
+			.pages
+				display flex
+				align-items center
+				padding-right 45px
+				border-right 1px solid c-plomo
+				figure
+					margin 0
+					margin-right 35px
+
+					img
+						display block
+				ul
+					li:first-child
+						margin-top 0px
+					li
+						margin-top 5px
+						a
+							color c-blanco
+							font-family regular
+							font-size 14px
+							transition 0.2s ease all
+							&:hover
+								color c-amarillo
+	.footer-bottom
+		padding 8px 0px
+		text-align center
+		h3
+			color black
+			font-family regular
+			font-size 13px
+			margin 0px
+
+
+@media (max-width: 960px)
+	footer .footer-top .container
+		flex-wrap wrap
+		.pages
+			width 49%
+			box-sizing border-box
+			margin-bottom 20px
+			padding-right 25px
+		.cnt-address
+			width 49%
+			padding-left 25px
+			padding-right 25px
+			box-sizing border-box
+			border-right none
+			margin-bottom 20px
+		.cnt-phone
+			width 49%
+			padding-left 25px
+			padding-right 25px
+			box-sizing border-box
+		.redes
+			width 49%
+			box-sizing border-box
+			padding-left 25px
+
+@media (max-width: 768px)
+	footer .footer-top
+		.container
+			width 96%
+			.pages
+				flex-direction column
+			.cnt-address
+				.address
+					justify-content center
+			.cnt-phone
+				margin-bottom 20px
+			.pages, .cnt-address, .cnt-phone, .redes
+				border none
+				padding 0px 0px
+				width 100%
+				justify-content center
+				figure
+					margin 0px
+				ul
+					display flex
+					li:first-child
+						margin-top 10px
+					li
+						margin 0px
+						margin 10px 10px

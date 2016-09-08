@@ -40,7 +40,7 @@ section.banner
             bottom 20px
             z-index 200
             left 0
-            right -910px
+            right -890px
             width 15px
             margin auto
 
@@ -66,7 +66,7 @@ section.banner
                     background-color c-black
                     margin auto
                     border-radius 50%
-            a.active
+            a.active, a:hover
                 border-color #fff
                 &:after
                     background white
@@ -129,12 +129,17 @@ section.info-pages
         display flex
         justify-content space-between
         .page:first-child
-            margin-left 0px !important
+            margin-left 0px
         .page:last-child
-            margin-right 0px !important
+            margin-right 0px
         .page
             margin 0px 5px
             text-align center
+            width 30%
+            figure
+                img
+                    width 100%
+                    height auto
             h3
                 font-family bold
                 font-size 20px
@@ -174,7 +179,7 @@ section.servicio-ventas
             figure
                 position absolute
                 bottom -22px
-                right 15px
+                right 10px
                 display inline-block
                 vertical-align top
                 img
@@ -251,7 +256,7 @@ section.contacto-empresa
                             border none
                             width 320px
                             border-radius 15px
-                            box-sizing box-sizing
+                            box-sizing border-box
                             padding-left 8px
                         textarea
                             box-shadow 3px 4px 0px c-plomo-sombra
@@ -260,7 +265,7 @@ section.contacto-empresa
                             border none
                             width 320px
                             border-radius 15px
-                            box-sizing box-sizing
+                            box-sizing border-box
                             padding-left 8px
                             padding-top 8px
                             height 100px
@@ -281,9 +286,130 @@ section.contacto-empresa
                         &:hover
                             color c-blanco
                             background c-azul
-                        i
-                            margin-top -1px
-                            margin-left 4px
-                            display inline-block
-                            vertical-align middle
+.icon-arrow-right
+    margin-top -1px
+    margin-left 4px
+    display inline-block
+    vertical-align middle
 
+
+@media (max-width: 960px)
+    section.banner
+        .container-slider .slider
+            .content
+                .container-text
+                    width 310px
+                    .title
+                        font-size 34px
+                    .sub-title
+                        font-size 34px
+                    .text
+                        font-size 14px
+        .bx-wrapper .bx-pager.bx-default-pager
+            right -700px
+        .bx-viewport
+            height 300px !important
+    section.servicio-ventas .container
+        flex-direction column
+        .item:first-child
+            margin-bottom 100px
+        .item
+            width 100%
+            .text
+                width 600px
+    section.contacto-empresa
+        padding-bottom 30px
+        .container
+            justify-content space-around
+            figure
+                display none
+            .formulario form .button
+                display block
+                margin-top 20px
+                margin-left 0px
+@media (max-width: 768px)
+    section.banner
+        .container-slider
+            .slider
+                display flex !important
+                .content
+                    margin auto
+                    display block
+                    float none
+                    padding-top 10px
+                    padding-bottom 40px
+                    padding-left 10px
+                    padding-right 10px
+                    height auto
+                    width 320px
+                    &:after
+                        display none
+                    .container-text
+                        text-align center
+                        display block
+                        margin auto
+                        width 100%
+                        .title
+                            font-size 24px
+                        .sub-title
+                            font-size 24px
+                        .text
+                            font-size 14px
+        .bx-wrapper .bx-pager.bx-default-pager
+
+            justify-content center
+            right 0px
+            width 300px
+            text-align center
+            bottom 45px
+            .bx-pager-item
+                margin 0px 5px
+                display inline-block
+
+            a
+                display inline-block
+    section.info-pages
+        margin-bottom 0px
+        .container
+            flex-direction column
+
+            .page
+                width 315px
+                margin auto
+                margin-bottom 40px
+            .page:first-child
+                margin-left inherit
+            .page:last-child
+                margin-right inherit
+
+    section.servicio-ventas
+        margin-bottom 20px
+        .container
+            .item:first-child
+                margin-bottom 20px
+            .item
+                margin-bottom 20px
+                .text
+                    width 100%
+                figure
+                    display none
+
+    section.contacto-empresa
+        padding-bottom 30px
+        .container
+            justify-content space-around
+
+            .formulario
+                width 95%
+                h2
+                    text-align center
+                    font-size 18px
+                    span
+                        font-size 18px
+                form .cnt-input
+                    width 100%
+                    .input
+                        input
+                            width 100%
+                        textarea
+                            width 100%
