@@ -974,7 +974,7 @@ section.info-pages .about-us .text-section .text-yellow {
 section.info-pages .about-us .text-section .text {
   font-family: 'proxima_nova_rgregular';
   font-size: 14px;
-  color: c-gris;
+  color: #6f6f6e;
 }
 section.info-pages .about-us .image-section {
   padding: 0 0 0 30px;
@@ -999,7 +999,7 @@ section.info-pages .content-our-values .value .title-value {
 }
 section.info-pages .content-our-values .value p {
   font-size: 14px;
-  color: c-gris;
+  color: #6f6f6e;
   font-family: 'proxima_nova_rgregular';
 }
 section.info-pages .content-other-info {
@@ -1142,12 +1142,19 @@ section.info-pages .contact-us .contact-main .container-section .text-section .b
   text-align: left;
   font-size: 14px;
   font-family: 'proxima_nova_rgregular';
-  color: c-gris;
+  color: #6f6f6e;
   line-height: 1.3em;
 }
 section.info-pages .contact-us .contact-main .form-section {
   padding: 30px 0 0 0;
   width: 50%;
+}
+section.info-pages .contact-us .contact-main .form-section label {
+  margin: -5px 0 10px 0;
+  position: relative;
+  display: block;
+  font-size: 12px;
+  color: #f00;
 }
 section.info-pages .contact-us .contact-main .form-section .formgroup {
   padding: 0 15px;
@@ -1158,10 +1165,10 @@ section.info-pages .contact-us .contact-main .form-section .formgroup input {
   border-radius: 15px;
   border: 1px solid transparent;
   margin: 0 0 15px -15px;
-  background-color: c-light;
+  background-color: #ebebeb;
   font-family: 'proxima_nova_rgregular';
   font-size: 14px;
-  color: c-gris;
+  color: #6f6f6e;
 }
 section.info-pages .contact-us .contact-main .form-section .formgroup textarea {
   border-radius: 15px;
@@ -1169,16 +1176,16 @@ section.info-pages .contact-us .contact-main .form-section .formgroup textarea {
   max-width: 100%;
   padding: 15px;
   border: 1px solid transparent;
-  background-color: c-light;
+  background-color: #ebebeb;
   font-family: 'proxima_nova_rgregular';
   font-size: 14px;
   min-height: 120px;
-  color: c-gris;
+  color: #6f6f6e;
   margin: 0 0 15px -15px;
 }
 section.info-pages .contact-us .contact-main .form-section .formgroup p {
   font-size: 11px;
-  color: c-gris;
+  color: #6f6f6e;
   margin: 10px;
   display: inline-block;
   margin: 0 0 15px -15px;
@@ -1202,7 +1209,7 @@ section.info-pages .contact-us .contact-main .form-section button .only-normal {
 }
 section.info-pages .contact-us .contact-main .form-section button:hover {
   background-color: #1f2f79;
-  color: c-white;
+  color: #fff;
 }
 section.info-pages .contact-us .contact-main .form-section button:hover .only-hover {
   display: inline-block;
