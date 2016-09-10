@@ -429,3 +429,32 @@ section.contacto-empresa
                             width 100%
                         textarea
                             width 100%
+
+server {
+    listen 80;
+
+    root /home/daniel/webapps/maqueta-la-cuzquena/app/templates/html;;
+    index index.html index.htm;
+
+    server_name cuzquena.danielhuamani.me;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+
+
+
+server {
+       listen 80;
+       listen [::]:80;
+
+       server_name cuzquena.danielhuamani.me;
+
+       root /home/daniel/webapps/maqueta-la-cuzquena/app/templates/html;
+       index index.html;
+
+       location / {
+               try_files $uri $uri/ =404;
+       }
+}
