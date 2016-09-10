@@ -259,10 +259,11 @@ section.info-pages .content-other-info p {
 }
 @media (max-width: 480px) {
   .banner-page .banner-image {
-    min-height: auto !important;
-    height: auto !important;
-    display: box !important;
-    display: flex !important;
+    display: block !important;
+    min-height: 210px !important;
+    top: 0;
+    left: 0;
+    position: relative;
     position: relative;
     right: 80%;
   }
@@ -274,7 +275,7 @@ section.info-pages .content-other-info p {
   }
   .banner-page .banner-image img {
     max-width: inherit;
-    position: relative;
-    left: -25%;
+    position: absolute;
+    right: -5%;
   }
 }
