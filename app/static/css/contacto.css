@@ -124,3 +124,20 @@ section.info-pages .contact-us .contact-main .form-section button:hover .only-no
 section.info-pages .contact-us .contact-main h3.main-title {
   text-align: left;
 }
+@media (max-width: 960px) {
+  section.info-pages .contact-us .contact-main .container-section {
+    display: block;
+  }
+  section.info-pages .contact-us .contact-main .container-section .text-section {
+    width: 100%;
+    display: block;
+  }
+  section.info-pages .contact-us .contact-main .container-section .text-section .info-contact {
+    text-align: left;
+    width: 100%;
+  }
+  section.info-pages .contact-us .contact-main .container-section .form-section {
+    width: 100%;
+    display: block;
+  }
+}
