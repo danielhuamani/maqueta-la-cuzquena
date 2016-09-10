@@ -99,6 +99,7 @@ section.info-pages
                 color c-gris
         .image-section
             padding: 0 0 0 30px;
+            min-width 45%
     .content-our-values
         .value
             text-align center
@@ -182,3 +183,61 @@ section.info-pages
             color c-blanco
             font-size 14px
             font-family regular
+
+@media (max-width: 960px)
+    .banner-page
+        .banner-image
+            min-height: auto!important
+            height: auto!important
+            display inline-block!important
+            &:before
+                display none
+            &:after
+                display none
+            img
+                max-width 100%
+    section.info-pages 
+        .about-us
+            .text-section
+                padding 10px
+            .image-section
+                padding 10px
+                img
+                    max-width 100%
+                    margin 0
+        .content-other-info 
+            background c-amarillo
+            padding 0 0 4px 0
+            .mision-side
+                &:after
+                    display none
+            .yellow-frame
+                background transparent
+            .blue-frame
+                background transparent
+            .mision-side
+                padding 40px 20px
+                text-align center
+            .vision-side
+                padding 40px 20px
+                text-align center
+                
+
+@media (max-width: 480px)
+                
+    .banner-page
+        .banner-image
+            min-height: auto!important
+            height: auto!important
+            display box!important
+            display flex!important
+            position relative
+            right 80%
+            &:before
+                display none
+            &:after
+                display none
+            img
+                max-width inherit
+                position relative
+                left -25%
