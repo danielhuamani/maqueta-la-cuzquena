@@ -50,6 +50,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-menu:before {
+  content: "\e903";
+}
+.icon-cross:before {
+  content: "\e904";
+}
+.icon-arrow-right:before {
+  content: "\e902";
+}
 .icon-envelope:before {
   content: "\e900";
 }
@@ -73,7 +82,4 @@
 }
 .icon-youtube:before {
   content: "\ea9d";
-}
-.icon-arrow-right:before {
-  content: "\e902";
 }

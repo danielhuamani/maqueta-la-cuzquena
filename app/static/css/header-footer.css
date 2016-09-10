@@ -61,6 +61,7 @@ header .container .container-telephone figure {
 }
 header .container .container-telephone a {
   margin-left: 5px;
+  margin-top: 3px;
   color: c-azul;
   font-family: bold;
   font-size: 16px;
@@ -223,6 +224,9 @@ footer .footer-bottom h3 {
   }
   footer .footer-top .container .cnt-address .address {
     justify-content: center;
+  }
+  footer .footer-top .container .cnt-address .address .icon-location {
+    display: none;
   }
   footer .footer-top .container .cnt-phone {
     margin-bottom: 20px;
