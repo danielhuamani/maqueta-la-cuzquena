@@ -100,6 +100,18 @@ section.servicios-pages .content-servicios .servicio .image .num {
   }
 }
 @media (max-width: 768px) {
+  section.servicios-pages .content-servicios .right .image {
+    padding: 15px 0px 15px 0px;
+  }
+  section.servicios-pages .content-servicios .right .image figure {
+    margin-right: 0px;
+  }
+  section.servicios-pages .content-servicios .left .image {
+    padding: 15px 0px 15px 0px;
+  }
+  section.servicios-pages .content-servicios .left .image figure {
+    margin-right: 0px;
+  }
   section.servicios-pages .content-servicios .servicio .content-text .content {
     padding-right: 10px;
     padding-left: 10px;

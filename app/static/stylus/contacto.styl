@@ -21,7 +21,7 @@ section.info-pages
                         padding 5px 0 20px 0
                         display flex
                         justify-content space-between
-                        .icon-contact
+                        .icon-contacts
                             text-align center
                             min-width 60px
                         .info-contact
@@ -49,7 +49,7 @@ section.info-pages
                     color: red;
                 .formgroup
                     padding 0 15px
-                    input 
+                    input
                         width 100%
                         padding 10px 15px
                         border-radius 15px
@@ -71,7 +71,7 @@ section.info-pages
                         min-height 120px
                         color c-gris
                         margin 0 0 15px -15px
-                    p 
+                    p
                         font-size 11px
                         color c-gris
                         margin 10px
@@ -89,8 +89,10 @@ section.info-pages
                     float right
                     & .only-hover
                         display none
+                        padding-left 8px
                     & .only-normal
                         display inline-block
+                        padding-left 8px
                     &:hover
                         background-color c-azul
                         color c-white
@@ -99,18 +101,22 @@ section.info-pages
                         & .only-normal
                             display none
             h3.main-title
-                text-align left 
+                text-align left
 
 @media (max-width: 960px)
     section.info-pages
         .contact-us
             .contact-main
+                h3.main-title
+                    text-align center
                 .container-section
                     display block
                     .text-section
                         width 100%
                         display block
-                        .info-contact
+                        .block-contact
+                            justify-content center
+                        .info-contacts
                             text-align left
                             width 100%
                     .form-section

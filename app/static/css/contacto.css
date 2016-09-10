@@ -28,7 +28,7 @@ section.info-pages .contact-us .contact-main .container-section .text-section .b
   display: flex;
   justify-content: space-between;
 }
-section.info-pages .contact-us .contact-main .container-section .text-section .block-contact .icon-contact {
+section.info-pages .contact-us .contact-main .container-section .text-section .block-contact .icon-contacts {
   text-align: center;
   min-width: 60px;
 }
@@ -107,9 +107,11 @@ section.info-pages .contact-us .contact-main .form-section button {
 }
 section.info-pages .contact-us .contact-main .form-section button .only-hover {
   display: none;
+  padding-left: 8px;
 }
 section.info-pages .contact-us .contact-main .form-section button .only-normal {
   display: inline-block;
+  padding-left: 8px;
 }
 section.info-pages .contact-us .contact-main .form-section button:hover {
   background-color: c-azul;
@@ -125,6 +127,9 @@ section.info-pages .contact-us .contact-main h3.main-title {
   text-align: left;
 }
 @media (max-width: 960px) {
+  section.info-pages .contact-us .contact-main h3.main-title {
+    text-align: center;
+  }
   section.info-pages .contact-us .contact-main .container-section {
     display: block;
   }
@@ -132,7 +137,10 @@ section.info-pages .contact-us .contact-main h3.main-title {
     width: 100%;
     display: block;
   }
-  section.info-pages .contact-us .contact-main .container-section .text-section .info-contact {
+  section.info-pages .contact-us .contact-main .container-section .text-section .block-contact {
+    justify-content: center;
+  }
+  section.info-pages .contact-us .contact-main .container-section .text-section .info-contacts {
     text-align: left;
     width: 100%;
   }

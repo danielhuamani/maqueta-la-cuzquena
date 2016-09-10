@@ -226,10 +226,12 @@ section.info-pages .content-other-info p {
     max-width: 100%;
   }
   section.info-pages .about-us .text-section {
+    text-align: center;
     padding: 10px;
   }
   section.info-pages .about-us .image-section {
     padding: 10px;
+    text-align: center;
   }
   section.info-pages .about-us .image-section img {
     max-width: 100%;
@@ -258,11 +260,11 @@ section.info-pages .content-other-info p {
 }
 @media (max-width: 480px) {
   .banner-page .banner-image {
+    overflow: hidden;
     display: block !important;
     min-height: 210px !important;
     top: 0;
     left: 0;
-    position: relative;
     position: relative;
     right: 80%;
   }
