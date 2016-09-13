@@ -1,5 +1,6 @@
 extends ./base.jade
 block content
+    .overlay
     section.banner-page
         .detail-banner
         .container
@@ -39,12 +40,24 @@ block content
                                     input(type="text",placeholder="Correo*",name="correo")
                                     textarea(placeholder="Mensaje*",name="mensaje")
                                     p *campos obligatorio.
-                                    button(type="submit",value="Enviar",class="right-button") Enviar
+                                    button(type="submit",value="Enviar",class="right-button send",data-envio="pop-1") Enviar
                                         <i class="icon-arrow-right"></i>
     .map-site
         .map
             #gmap_canvas
             a(href="https://embedmaps.org/")
+
+
+    section.pop-contacto
+        .pop.pop-1
+            .content
+                .icon-cross
+                figure
+                    img(src="../../static/img/send-contact.png", alt="")
+                h3.
+                    ¡Gracias, tu mensaje ha sido enviado!
+                .text.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptates, mollitia esse! Dolorem itaque error nihil dicta vel sed esse, illum cupiditate ipsum eius voluptatum voluptatem delectus, atque, enim eveniet!
 
 block js
     script(src="../../static/js/jquery.validate.min.js")
