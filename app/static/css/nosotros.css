@@ -115,25 +115,31 @@ section.info-pages .about-us .image-section {
   padding: 0 0 0 30px;
   min-width: 45%;
 }
-section.info-pages .content-our-values .value {
-  text-align: center;
-  padding: 20px 10px;
+section.info-pages .content-our-values .container {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
 }
-section.info-pages .content-our-values .value .line-yellow {
+section.info-pages .content-our-values .container .value {
+  text-align: center;
+  padding: 2% 1%;
+  flex-basis: 23%;
+}
+section.info-pages .content-our-values .container .value .line-yellow {
   background-color: c-amarillo;
   height: 3px;
   width: 95%;
   margin: auto;
   display: inline-block;
 }
-section.info-pages .content-our-values .value .title-value {
+section.info-pages .content-our-values .container .value .title-value {
   color: c-azul;
   font-size: 17px;
   font-family: bold;
   text-transform: uppercase;
   padding: 20px 0 0;
 }
-section.info-pages .content-our-values .value p {
+section.info-pages .content-our-values .container .value p {
   font-size: 14px;
   color: c-gris;
   font-family: regular;
@@ -259,6 +265,16 @@ section.info-pages .content-other-info p {
   }
 }
 @media (max-width: 480px) {
+  .content-our-values .container {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .content-our-values .container .value {
+    text-align: center;
+    padding: 2% 1%;
+    flex-basis: 48% !important;
+  }
   .banner-page .banner-image {
     overflow: hidden;
     display: block !important;

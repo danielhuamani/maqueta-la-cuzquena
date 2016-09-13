@@ -101,25 +101,30 @@ section.info-pages
             padding: 0 0 0 30px;
             min-width 45%
     .content-our-values
-        .value
-            text-align center
-            padding: 20px 10px
-            .line-yellow
-                background-color c-amarillo
-                height 3px
-                width 95%
-                margin auto
-                display inline-block
-            .title-value
-                color c-azul
-                font-size 17px
-                font-family: bold
-                text-transform uppercase
-                padding: 20px 0 0
-            p
-                font-size 14px
-                color c-gris
-                font-family: regular
+        .container
+            position: relative;
+            display: flex;
+            flex-flow: row wrap;
+            .value
+                text-align center
+                padding: 2% 1%
+                flex-basis: 23%;
+                .line-yellow
+                    background-color c-amarillo
+                    height 3px
+                    width 95%
+                    margin auto
+                    display inline-block
+                .title-value
+                    color c-azul
+                    font-size 17px
+                    font-family: bold
+                    text-transform uppercase
+                    padding: 20px 0 0
+                p
+                    font-size 14px
+                    color c-gris
+                    font-family: regular
     .content-other-info
         text-align left
         position relative
@@ -226,6 +231,15 @@ section.info-pages
 
 @media (max-width: 480px)
 
+    .content-our-values
+        .container
+            position: relative;
+            display: flex;
+            flex-flow: row wrap;
+            .value
+                text-align center
+                padding: 2% 1%
+                flex-basis: 48%!important;
     .banner-page
         .banner-image
             overflow hidden
